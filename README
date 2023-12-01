@@ -1,0 +1,27 @@
+
+# Parse Credit Card Statement into Data
+
+
+# Setup
+
+## Parse
+If you happen to have a CapitalOne credit card you can download your monthly statements as PDFs and run capital_one.py.  
+See `./capital_one.py -h` for options.
+
+Example:  
+`./capital_one.py ./assets/CapitalOne/Statement_112023.pdf -p 3,4`
+
+
+## Analysis
+
+The goal here is to classify transactions by the short text descriptions included in each transaction description.    
+Very much a WIP since my attempt at zero-shot classification doesn't work very well.  
+I'm working on hand labeling some of the data for some supervised learning.  
+
+
+Some scripts in the analysis dir use the OpenAI API. 
+You could use them by adding your openai key as environmental variable "OPENAI".  
+If using `virtualenv`, edit <your-env>/bin/activate and add `OPENAI=your-key` at the end of the script.  
+Also add `unset OPENAI` inside of the `deactivate ()` function in the activate script.  
+
+

@@ -1,0 +1,7 @@
+tabula-py
+pandas
+sklearn
+openai
+jpype1
+scikit-learn
+matplotlib
